@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { IoCloudy, IoSunny, IoRainy } from 'react-icons/io5';
+
 import Section from '../components/Section/Section';
 import WeatherContainer from '../components/WeatherContainer/WeatherContainer';
 import InfoContainer from '../components/InfoContainer/InfoContainer';
 
 const Home = () => {
   const [values, setValues] = useState(null);
-  const Icons = {
-    Clouds: <IoCloudy />,
-    Clear: <IoSunny />,
-    Rain: <IoRainy />,
-  };
 
   const city = 'zagreb';
   const apiKey = 'c29e85d23ed52ef4c9993487a4f104d9';

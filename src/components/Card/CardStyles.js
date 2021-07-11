@@ -1,1 +1,26 @@
 import styled from 'styled-components';
+
+export const CardWrapper = styled.div`
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+`;
+
+export const IconWrapper = styled.div`
+  font-size: 28px;
+  text-align: center;
+  padding: 12px 0px;
+`;
+
+export const DayOfWeek = styled.h3`
+  font-weight: 400;
+  text-align: center;
+`;
+
+export const CurrentTemp = styled.h2`
+  text-align: center;
+`;
+
+export const MinMaxTemp = styled.p`
+  text-align: center;
+  padding: 8px 0px;
+`;

@@ -3,6 +3,9 @@ import Card from '../Card/Card';
 import { Grid } from '../../lib/styles/generalStyles';
 
 const WeatherContainer = ({ data }) => {
+  console.log(data);
+  const currentWeather = [];
+  data && currentWeather.push(data.current.temp);
   return (
     <Grid>
       {data &&
@@ -13,6 +16,9 @@ const WeatherContainer = ({ data }) => {
                 key={index}
                 maxTemp={value.temp.max}
                 minTemp={value.temp.min}
+                weather={value.weather[0].main}
+                date={value.dt}
+                currentWeather={index === 0 && currentWeather}
               />
             )
         )}
