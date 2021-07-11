@@ -24,3 +24,31 @@ export const SearchBar = styled.input`
     outline: none;
   }
 `;
+
+export const NameRow = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 32px 0px;
+`;
+
+export const NameInner = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`;
+
+export const CityName = styled.h2`
+  padding: 8px 0px;
+`;
+
+export const Region = styled.p``;
+
+export const ClockWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 0px;
+`;
+
+export const ClockValues = styled.h2``;

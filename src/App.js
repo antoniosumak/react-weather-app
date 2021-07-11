@@ -1,7 +1,12 @@
 import Home from './pages/Home';
+import { Main } from './lib/styles/generalStyles';
 
 function App() {
-  return <Home />;
+  return (
+    <Main>
+      <Home />
+    </Main>
+  );
 }
 
 export default App;
