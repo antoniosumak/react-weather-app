@@ -6,6 +6,7 @@ export const Grid = styled.div`
   grid-template-columns: 1fr;
   grid-gap: 20px;
   padding-top: 24px;
+  align-items: center;
   @media screen and (${breakpoints.tablet}) {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 
 import Section from '../components/Section/Section';
 import WeatherContainer from '../components/WeatherContainer/WeatherContainer';
 import InfoContainer from '../components/InfoContainer/InfoContainer';
+import { SearchContext } from '../context/SearchContext';
 
 const Home = () => {
   const [values, setValues] = useState(null);
 
-  const city = 'zagreb';
+  const { searchValue, city } = useContext(SearchContext);
   const apiKey = 'c29e85d23ed52ef4c9993487a4f104d9';
+
+  console.log(searchValue);
 
   useEffect(() => {
     fetch(
@@ -22,7 +25,7 @@ const Home = () => {
           .then((res) => res.json())
           .then((data) => setValues(data));
       });
-  }, []);
+  }, [city]);
 
   console.log(values);
 

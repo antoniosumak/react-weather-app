@@ -3,12 +3,14 @@ import styled from 'styled-components';
 export const CardWrapper = styled.div`
   padding: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: min-content;
 `;
 
 export const IconWrapper = styled.div`
   font-size: 28px;
   text-align: center;
   padding: 12px 0px;
+  color: ${(props) => props.currentWeather === 'Clear' && '#ff4500'};
 `;
 
 export const DayOfWeek = styled.h3`

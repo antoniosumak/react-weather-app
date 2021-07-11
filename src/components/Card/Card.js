@@ -20,7 +20,7 @@ const Card = ({ minTemp, maxTemp, weather, date, currentWeather }) => {
   return (
     <CardWrapper>
       <DayOfWeek>{days[dateNew.getDay()]}</DayOfWeek>
-      <IconWrapper>{Icons[weather]}</IconWrapper>
+      <IconWrapper currentWeather={weather}>{Icons[weather]}</IconWrapper>
       <CurrentTemp>{currentWeather && `${~~currentWeather[0]}°C`}</CurrentTemp>
       <MinMaxTemp>{`${~~minTemp}°C / ${~~maxTemp}°C`}</MinMaxTemp>
     </CardWrapper>
