@@ -51,4 +51,6 @@ export const ClockWrapper = styled.div`
   padding: 75px 0px;
 `;
 
-export const ClockValues = styled.h2``;
+export const ClockValues = styled.h2`
+  font-size: 40px;
+`;

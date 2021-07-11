@@ -4,7 +4,6 @@ import { Grid } from '../../lib/styles/generalStyles';
 import { WeatherWrapper } from './WeatherContainerStyles';
 
 const WeatherContainer = ({ data }) => {
-  console.log(data);
   const currentWeather = [];
   data && currentWeather.push(data.current.temp);
   return (
