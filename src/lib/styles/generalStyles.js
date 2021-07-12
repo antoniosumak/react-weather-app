@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints } from './theme';
+import morning from '../../assets/images/morning.jpg';
+import evening from '../../assets/images/evening.jpg';
 
 export const Grid = styled.div`
   display: grid;
@@ -18,4 +20,7 @@ export const Grid = styled.div`
 export const Main = styled.main`
   width: 100%;
   height: 100%;
+  background-image: url(${(props) => (props.time < 12 ? morning : evening)});
+  background-position: center;
+  background-size: cover;
 `;

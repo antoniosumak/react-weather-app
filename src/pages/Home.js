@@ -27,8 +27,6 @@ const Home = () => {
       });
   }, [city]);
 
-  console.log(values);
-
   return (
     <Section>
       <InfoContainer data={values} />

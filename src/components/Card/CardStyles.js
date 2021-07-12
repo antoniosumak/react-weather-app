@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
   padding: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(20, 20, 20, 0.5) 0px 8px 24px;
   height: min-content;
+  background-color: #fff;
+  border-radius: 10px;
 `;
 
 export const IconWrapper = styled.div`
